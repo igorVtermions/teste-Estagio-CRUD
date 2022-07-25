@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>TESTE PARA ESTáGIO</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <span>PRODUTOS CADASTRADOS</span>
+            <button id="new" onclick="openModal()">Adicionar</i></button>
+        </header>
+
+        <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Marca</th>
+                        <th>Categoria de Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th>
+                        <th class="action">Editar</th>
+                        <th class="action">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="modal-container">
+            <div class="modal">
+
+                <span>CADASTRAR PRODUTOS</span>
+                <form >
+                    <label for="m-name">Nome</label>
+                    <input type="text" name="name" id="m-name" required>
+
+                    <label for="m-brand">Marca</label>
+                    <select name="brand" id="m-brand">
+                        <option selected disabled hidden>Selecione</option>
+                        <option>Nestle</option>
+                        <option>Nutella</option>
+                        <option>Lacta</option>
+                        <option>Garoto</option>
+                    </select>
+
+                    <label for="m-category">Categoria de Produto</label>
+                    <select name="category" id="m-category">
+                        <option selected disabled hidden>Selecione</option>
+                        <option>Achocolatado</option>
+                        <option>Doce de Leite</option>
+                        <option>Barra de Chocolate</option>
+                        <option>Creme de Chocolate</option>
+                        <option>Biscoito</option>
+                        <option>Sorvete</option>
+                    </select>
+
+                    <label for="m-amount">Quantidade</label>
+                    <input type="number" name="amount" id="m-amount" required>
+
+                    <label for="m-price">Valor</label>
+                    <input type="number" name="price" id="m-price" required>
+
+
+
+
+                    <button id="btnsave">Salvar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
