@@ -74,6 +74,10 @@ body{
     border-radius: 10px;
 }
 
+form input{
+    border: 0;
+}
+
 table{
     width: 100%;
     border-spacing: 10px;
@@ -124,6 +128,7 @@ select{
     border: none;
     border-radius: 10px;
     margin-bottom: 10px;
+    border-width: 2px;
 }
 
 .modal-container{
